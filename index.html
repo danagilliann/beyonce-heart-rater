@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		
+		<title>Rate the Beyonce Gif</title>
+    
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+		<link rel="stylesheet" href="style/style.css">
+		
+		<script src="node_modules/angular/angular.js"></script>
+		<script src="js/app.js"></script>
+
+	</head>
+
+	<body ng-app="beyonceApp">
+		<div class="main" ng-controller="MainController">
+			<header class="row">
+				<h1>{{ title }}</h1>
+				<p>{{ about }}</p>
+			<header>
+			<div class="gif-container row">
+				<img class="gif" ng-src="http://media.giphy.com/media/{{ data.id }}/giphy.gif"/>
+			</div>
+		</div>
+	</body>
+
+</html>
