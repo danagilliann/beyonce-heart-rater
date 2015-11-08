@@ -3,8 +3,7 @@ var app = angular.module('beyonceApp', []);
 app.controller('MainController', function($scope, $http) { 
 	$scope.title = 'Rate the Beyonce Gif'; 
 	$scope.about = "It's as simple as it sounds! Rate a Beyonce gif. If you want another gif, click the 'another!' button";
-	
-	console.log("hello");
+
 	fetch();
 
 	function fetch() { 
