@@ -1,3 +1,7 @@
+.main {
+  text-align: center;
+  height: 100%; }
+
 header {
   margin: auto;
   padding: 2em 0; }
@@ -5,18 +9,43 @@ header {
 h1, p {
   text-align: center; }
 
-h1 {
+h1, h2 {
   font-weight: 100; }
 
 .gif {
   margin: 0em auto; }
 
 img.gif {
-  max-height: 250px;
+  height: 250px;
   width: auto;
   display: block; }
 
 .gif-container {
   margin: 0em auto; }
+
+.ratings {
+  display: block; }
+
+footer {
+  background: black;
+  padding: 3em;
+  margin-top: 1.49em; }
+  footer p {
+    color: white; }
+  footer a {
+    color: white;
+    text-decoration: underline; }
+
+button {
+  background: black;
+  color: white;
+  border: none;
+  display: block;
+  margin: 3em auto; }
+  button .bae {
+    z-index: 1000; }
+  button h2 {
+    padding: 0 1em;
+    margin-bottom: 20px; }
 
 /*# sourceMappingURL=style.css.map */
