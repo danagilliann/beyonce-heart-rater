@@ -1,5 +1,8 @@
+::selection {
+  background-color: #e9837b; }
+
 div {
-  padding: 2em 0; }
+  padding: 1.2em 0; }
 
 .main {
   text-align: center;
@@ -42,8 +45,10 @@ footer {
   footer p {
     color: white; }
   footer a {
-    color: white;
+    color: #8ce6df;
     text-decoration: underline; }
+  footer a:hover {
+    color: white; }
 
 button {
   background: black;
