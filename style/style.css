@@ -1,15 +1,24 @@
+div {
+  padding: 2em 0; }
+
 .main {
   text-align: center;
   height: 100%; }
 
+footer {
+  padding: 2em; }
+
 header {
   margin: auto;
-  padding: 2em 0; }
+  padding: 2em; }
 
 h1, p {
   text-align: center; }
 
-h1, h2 {
+h1 {
+  font-weight: 400; }
+
+h2 {
   font-weight: 100; }
 
 .gif {
@@ -41,7 +50,8 @@ button {
   color: white;
   border: none;
   display: block;
-  margin: 3em auto; }
+  margin: 3em auto;
+  padding: 1em 0; }
   button .bae {
     z-index: 1000; }
   button h2 {

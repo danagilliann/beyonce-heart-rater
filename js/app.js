@@ -5,15 +5,21 @@ app.controller('MainController', function($scope, $http) {
 	$scope.about = "It's as simple as it sounds! Heart a Beyonce gif. If you want another gif, refresh the page!";
 
 	$scope.bae = function() { 
-		var marginTop = -randomNumber(screen.height/2);
-		var marginLeft = randomNumber(screen.width/2);
+		var marginTop = randomNumber(screen.height-72);
+		var marginLeft = randomNumber(screen.width);
+
+		console.log(marginTop);
+		console.log(marginLeft);
 	
 		var image = document.createElement("img");
-		image.src = 'assets/heart.svg';
+		
+		var emojis = ['heart.svg','heart_eyes.svg','sparkling_heart.svg']; 
+		
+		image.src = 'assets/' + emojis[randomNumber(3)];
 
 		image.style.position = "absolute";
-		image.style.marginTop = marginTop.toString() + "px";
-		image.style.marginLeft = marginLeft.toString() + "px";
+		image.style.top = marginTop.toString() + "px";
+		image.style.left = marginLeft.toString() + "px";
 		image.style.width = "100px";
 		image.style.height = "auto";
 		image.style.zIndex = "-10000";
@@ -23,7 +29,7 @@ app.controller('MainController', function($scope, $http) {
 
 	function randomNumber(n) { return Math.floor(Math.random() * n); } // Random num generator with n as the upperbound inclusive
 
-	function jsonFile() { return "http://api.giphy.com/v1/gifs/search?q=beyonce&api_key=dc6zaTOxFJmzC"  }
+	function jsonFile() { return "http://api.giphy.com/v1/gifs/search?q=beyonce&limit=100&api_key=dc6zaTOxFJmzC"  }
 
 	fetch();
 	function fetch() { 
