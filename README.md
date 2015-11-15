@@ -1,5 +1,6 @@
 # Beyonce Gif Hearter
-## [VISIT THE SITE](http://danagilliann.me/beyonce-gif-rater/)
+# [VISIT THE SITE](http://danagilliann.me/beyonce-gif-rater/)
+### Warning: It's not the most SFW thing ever (working on it)
 
 Don't you wish you could show more love to Queen B? I know I do. 
 That's why Beyonce Gif Hearter is here! You're presented with a new gif of Queen B(ae) every refresh and you can use the button to populate the window with emojis!! It's a great way to show your love to the Queen.
