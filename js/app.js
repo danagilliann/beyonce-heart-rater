@@ -2,7 +2,7 @@ var app = angular.module('beyonceApp', []);
 
 app.controller('MainController', function($scope, $http) { 
 	$scope.title = 'Heart the Beyonce Gif'; 
-	$scope.about = "It's as simple as it sounds! Heart a Beyonce gif. If you want another gif, refresh the page!";
+	$scope.about = "It's as simple as it sounds! Heart a Beyonce gif. If you want another gif, refresh the page! Warning: May be NSFW";
 
 	$scope.bae = function() { 
 		var marginTop = randomNumber(screen.height-72);
@@ -29,7 +29,7 @@ app.controller('MainController', function($scope, $http) {
 
 	function randomNumber(n) { return Math.floor(Math.random() * n); } // Random num generator with n as the upperbound inclusive
 
-	function jsonFile() { return "http://api.giphy.com/v1/gifs/search?q=beyonce&limit=100&api_key=dc6zaTOxFJmzC"  }
+	function jsonFile() { return "http://api.giphy.com/v1/gifs/search?q=beyonce&limit=100&offset=" + randomNumber(30).toString() + "&api_key=dc6zaTOxFJmzC"  }
 
 	fetch();
 	function fetch() { 
