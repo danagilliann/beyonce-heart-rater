@@ -5,12 +5,9 @@ app.controller('MainController', function($scope, $http) {
 	$scope.about = "It's as simple as it sounds! Heart a Beyonce gif. If you want another gif, refresh the page! Warning: May be NSFW";
 
 	$scope.bae = function() { 
-		var marginTop = randomNumber(screen.height-72);
+		var marginTop = randomNumber(screen.height-114);
 		var marginLeft = randomNumber(screen.width);
-
-		console.log(marginTop);
-		console.log(marginLeft);
-	
+		
 		var image = document.createElement("img");
 		
 		var emojis = ['heart.svg','heart_eyes.svg','sparkling_heart.svg']; 

@@ -7,4 +7,5 @@
 - Refresh button (instead of hitting refresh)
 - Space bar + "What a baeyonce"
 - New gif every time
+- Ability to add a string to end of beyonce
 - Save number of hearts + gif (requires multiple pages) --> Maybe
