@@ -26,7 +26,7 @@ app.controller('MainController', function($scope, $http) {
 
 	function randomNumber(n) { return Math.floor(Math.random() * n); } // Random num generator with n as the upperbound inclusive
 
-	function jsonFile() { return "http://api.giphy.com/v1/gifs/search?q=beyonce&limit=100&offset=" + randomNumber(30).toString() + "&api_key=dc6zaTOxFJmzC"  }
+	function jsonFile() { return "http://api.giphy.com/v1/gifs/search?q=beyonce&limit=100&offset=" + randomNumber(30).toString() + "&api_key=dc6zaTOxFJmzC";}
 
 	fetch();
 	function fetch() { 
